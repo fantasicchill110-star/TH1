@@ -1,0 +1,37 @@
+[
+    {
+        "id": "flow_th4",
+        "type": "tab",
+        "label": "TH4 Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "mqtt_in_telemetry",
+        "type": "mqtt in",
+        "z": "flow_th4",
+        "name": "Sub Telemetry",
+        "topic": "bcse/th4/25112021/telemetry",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "broker_mosquitto",
+        "x": 160,
+        "y": 120,
+        "wires": [["debug_console"]]
+    },
+    {
+        "id": "debug_console",
+        "type": "debug",
+        "z": "flow_th4",
+        "name": "Debug Output",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 390,
+        "y": 120,
+        "wires": []
+    }
+]
