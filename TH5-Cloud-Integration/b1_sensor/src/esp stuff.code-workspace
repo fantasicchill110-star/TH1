@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "esp stuff",
+		"path": "../../.."
+	},
+	{
+		"name": "b1_sensor",
+		"path": ".."
+	}
+],
+  "settings": {}
+}
